@@ -5,42 +5,117 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Portafolio profesional de Javier Faúndez Guzmán - Desarrollador Web y Programador">
     <meta name="keywords" content="desarrollo web, programación, portafolio, HTML, CSS, JavaScript">
-
-    <title>Javier Faúndez Guzmán Web</title>
+    <!-- Titulo -->
+    <title>Portafolio - Web: Javier Faúndez</title>
 
     <!-- Estilos -->
     <link rel="stylesheet" href="data/css/style.css">
+    <link rel="stylesheet" href="data/css/darkmode.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <!-- Icono de la pestaña -->
     <link rel="shortcut icon" href="data/images/icondanger.png" type="image/x-icon">
 </head>
 <body>
 
+<!-- Barra de Navegación -->
+<nav id="nav-bar" class="darkmode">
+    <div id="nav-logo">
+        <a href="data/pdf/Curriculum-JF.pdf" target="_blank" aria-label="Ir al Curriculum de Javier Faúndez Guzmán">
+            <div id="nav-images" data-aos="flip-right" data-aos-easing="ease-out-cubic" data-aos-duration="1000" >
+                <img src="data/images/icon.png" alt="icon" height="80px">
+                <img src="data/images/icondanger.png" alt="icondanger" class="abs-images" height="80px">
+            </div>
+            <h1>Portafolio Web: Javier Faúndez</h1>
+        </a>
+    </div>
+    <button id="nav-toggle" aria-label="Abrir menú" class="nav-toggle">
+        <span class="hamburger">&#9776;</span>
+    </button>
+    <div id="nav-links" class="nav-links">
+        <a href="#inicio" id="link-inicio">Inicio</a>
+        <a href="#scroll1" id="link-sobre-mi">Sobre mí</a>
+        <a href="#scroll2" id="link-proyectos">Proyectos</a>
+        <a href="#changes" id="link-changelog">Cambios</a>
+    </div>
+</nav>
+
+<!-- Contenido -->
 <main id="container">
+    <!-- Presentación -->
+    <section class="hero sections" id="inicio">
+        <h1 class="hero-title">Javier Faúndez</h1>
+        <h2 class="hero-subtitle">Desarrollador Web y Programador</h2>
+        <a href="#scroll2" class="hero-btn">Ver mis proyectos (doble click)</a>
+    </section>
     <!-- Sección Sobre mí -->
     <section id="master">
-        <header class="masters-titles darkmode" id="scroll1">
+        <header
+        class="masters-titles darkmode"
+        id="scroll1"
+        >
             <h2>Sobre mí</h2>
         </header>
         <div id="master-container">
-            <article class="master-box1" data-aos="flip-right" data-aos-easing="ease-out-cubic" data-aos-duration="1700">
+            <article 
+            class="master-box1"
+            data-aos="flip-right"
+            data-aos-easing="ease-out-cubic"
+            data-aos-duration="1500"
+            >
                 <div class="cardtop"></div>
+                <div
+                    style="
+                        background: linear-gradient(darkmagenta, rgb(139, 65, 139), white);
+                        width: 100%;
+                        height: 100px;
+                        position: relative;">
+                    <img
+                    data-aos="zoom-in"
+                    data-aos-delay="100"
+                    src="data/images/PFP/PFP.webp"
+                    id="image-profile"
+                    alt="PFP de Javier Faundez"
+                    >
+                </div>
                 <div class="cardbottom darkmode">
-                    <img data-aos="zoom-in" data-aos-delay="200" src="data/images/PFP2.jpg" id="image-profile">
                     <div id="h2profile">
-                        <h2 data-aos="zoom-in" data-aos-delay="400">¡Hola! Yo soy Javier Esteban Faúndez Guzmán</h2>
+                        <h2 data-aos="zoom-in" data-aos-delay="200">
+                            ¡Hola! Yo soy Javier Faúndez
+                        </h2>
                     </div>
                     <div class="textcard">
-                        <h2 data-aos="zoom-out-up" data-aos-delay="700">Sobre mí</h2>
-                        <p data-aos="flip-up" data-aos-delay="900">
-                            Soy estudiante de la carrera Técnico en Programación y tengo un gran 
-                            interés en ampliar mis conocimientos en el área del desarrollo de software. 
-                            Actualmente, me desempeño como trabajador freelancer y desarrollador de videojuegos. 
-                            Además, la música es una de mis pasiones, y cuento con un nivel intermedio en la interpretación del piano.
+                        <h2 data-aos="zoom-out-up" data-aos-delay="400">
+                            Sobre mí
+                        </h2>
+                        <p data-aos="flip-up" data-aos-delay="500" class="margin-b-10px">
+                            Soy estudiante de Técnico en Programación con interés en el
+                            desarrollo de software y la creación de soluciones funcionales.
+                            Actualmente trabajo como freelancer, desarrollando páginas web
+                            y participando en proyectos que fortalecen mis habilidades
+                            técnicas y mi capacidad para resolver problemas.
                         </p>
-                        <h2 data-aos="flip-left" data-aos-delay="200">Este es mi Curriculum</h2>
-                        <button onclick="window.open('data/pdf/Curriculum - JEFG.pdf')" class="btns" data-aos="zoom-in" data-aos-delay="400">
+                        <p data-aos="flip-up" data-aos-delay="600">
+                            Me enfoco en aprender mediante la práctica, creando proyectos
+                            propios y mejorando continuamente mis conocimientos, especialmente
+                            en JavaScript y desarrollo web.
+                        </p>
+                        <p data-aos="flip-up" data-aos-delay="700">
+                            Mi objetivo es convertirme en desarrollador Full Stack, capaz
+                            de construir aplicaciones completas, eficientes y bien estructuradas.
+                        </p>
+                        <h2
+                        data-aos="zoom-in"
+                        data-aos-delay="400"
+                        >
+                            Este es mi Curriculum
+                        </h2>
+                        <button 
+                        onclick="window.open('data/pdf/Curriculum-JF.pdf')"
+                        class="btns" data-aos="zoom-in"
+                        data-aos-delay="400"
+                        >
                             Curriculum
                         </button>
                     </div>
@@ -48,26 +123,42 @@
             </article>
 
             <div id="master-box2">
-                <div class="skills darkmode" data-aos="fade-down" data-aos-easing="ease-in-sine">
-                    <h2>Habilidades</h2>
+                <div
+                class="skills darkmode"
+                data-aos="fade-down"
+                data-aos-easing="ease-in-sine"
+                >
+                    <h2>Lenguajes</h2>
                     <ul>
-                        <li>Desarrollo Web (HTML y CSS).</li>
-                        <li>Desarrollo en Música (Pianista).</li>
-                        <li>Programador (JavaScript, JSON, LUA).</li>
+                        <li>HTML.</li>
+                        <li>CSS.</li>
+                        <li>Python.</li>
+                        <li>JavaScript.</li>
+                        <li>JSON.</li>
+                        <li>Lua.</li>
+                        <li>Git/GitHub.</li>
                     </ul>
                 </div>
-                <div class="interests darkmode" data-aos="fade-up" data-aos-easing="ease-in-sine">
+                <div
+                class="interests darkmode"
+                data-aos="zoom-in"
+                data-aos-easing="ease-in-sine"
+                >
                     <h2>Intereses</h2>
                     <ul>
+                        <li>Desarrollo Web Full Stack.</li>
+                        <li>Ingeniería en informática.</li>
+                        <li>Software.</li>
                         <li>Desarrollo de Videojuegos.</li>
                         <li>Desarrollo en Música (Más instrumentos, FL Studio).</li>
                         <li>UI/UX Design.</li>
-                        <li>Desarrollo Web Full Stack.</li>
                     </ul>
                 </div>
-            </div>
-            <div id="master-box3" class="darkmode" data-aos="zoom-in" data-aos-easing="ease-in-sine">
-                <div class="contacts">
+                <div
+                class="contacts darkmode"
+                data-aos="fade-up"
+                data-aos-easing="ease-in-sine"
+                >
                     <h2>Contactos</h2>
                     <div class="contacts-links">
                         <a href="mailto:javierfaundezguzman@alumnos.sip.cl" data-aos="fade-right">
@@ -79,11 +170,8 @@
                         <a href="https://www.linkedin.com/in/javier-fa%C3%BAndez-guzm%C3%A1n-413236379?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" data-aos="fade-right">
                             <i class="bi bi-linkedin"> LinkedIn</i>
                         </a>
-                        <a href="https://github.com/MateJaviF" data-aos="fade-right">
-                            <i class="bi bi-github"> GitHub (Escolar)</i>
-                        </a>
-                        <a href="https://github.com/Mutinelo" data-aos="fade-right">
-                            <i class="bi bi-github"> GitHub (Personal)</i>
+                        <a href="https://github.com/Mut1nelo" data-aos="fade-right">
+                            <i class="bi bi-github"> GitHub</i>
                         </a>
                         <a href="tel:+56932888121" data-aos="fade-right">
                             <i class="bi bi-whatsapp"> WhatsApp /</i>
@@ -91,6 +179,13 @@
                         </a>
                     </div>
                 </div>
+            </div>
+            <div
+            id="master-box3" 
+            class="darkmode" 
+            data-aos="zoom-in" 
+            data-aos-easing="ease-in-sine"
+            >
             </div>
         </div>
     </section>
@@ -107,19 +202,19 @@
             <div class="proyects-boxs darkmode">
                 <h3 class="margin-b-15px">Página Web: All Rico Pan [En proceso...]</h3>
                 <h3>¿Qué es?</h3>
-                <p class="margin-b-15px">Una página web básica para la panaderia de mi familia.</p>
-                <p>
+                <p>Una página web básica para la panaderia de mi familia.</p>
+                <p class="margin-b-15px">
                     Quiero que se puedan ver los productos que 
                     ofrecemos, horarios, eventos, y casi todo 
                     lo relacionado con nuestra panadería.
                 </p>
                 <h3>¿Quiénes somos?</h3>
                 <p class="margin-b-15px">
-                    "Somos una panadería familiar ubicada a pasos 
-                    del metro Estación San Ramón. Estamos orgullosos 
-                    de ser la opción favorita de nuestros vecinos 
-                    a la hora de la oncesita, o para reunirse con 
-                    amigos, tomar un café y disfrutar de un rico 
+                    "Somos una panadería familiar ubicada a pasos
+                    del metro Estación San Ramón. Estamos orgullosos
+                    de ser la opción favorita de nuestros vecinos
+                    a la hora de la oncesita, o para reunirse con
+                    amigos, tomar un café y disfrutar de un rico
                     pastel recién preparado. ¡Visítanos hoy mismo!".
                 </p>
                 <h3>¿Dónde encontrarnos?</h3>
@@ -131,7 +226,7 @@
                 </p>
                 <figure class="margin-b-15px" data-aos="flip-left" style="border-radius: 50%;">
                     <img
-                        src="data/images/AllRicoPanLogo.jpg"
+                        src="data/images/proyects/AllRicoPanLogo.jpg"
                         alt="Logo de All Rico Pan"
                         width="200" height="200"
                         loading="lazy"
@@ -139,54 +234,11 @@
                         style="max-width:100%;height:auto;display:block;border-radius: 50%;"
                     >
                 </figure>
-                <button class="btns">[No disponible]</button>
-            </div>
-            <div class="proyects-boxs darkmode">
-                <h3 class="margin-b-15px">Plan Lector: Fatamorgana de Amor con Banda de Música</h3>
-                <h3>¿Qué objetivo tiene?</h3>
-                <p class="margin-b-15px">
-                    Este portafolio literario tiene como objetivo 
-                    analizar y presentar de forma completa la novela 
-                    “Fatamorgana de amor con banda de música”, 
-                    escrita por el autor chileno Hernán Rivera Letelier. 
-                    La obra fue publicada en 1998 y se enmarca dentro 
-                    del realismo mágico, un estilo que combina lo 
-                    cotidiano con lo fantástico, ambientado en 
-                    el árido y misterioso desierto de Atacama.
-                </p>
-                <h3>Resumen</h3>
-                <p class="margin-b-10px">
-                    La historia narra la vida de una banda de músicos ambulantes que viaja por 
-                    las oficinas salitreras del norte de Chile tocando en fiestas, funerales y 
-                    celebraciones. El grupo llega un día a la oficina llamada Quebrada Seca, 
-                    donde el trompetista Bello Sandalio conoce a una misteriosa mujer conocida 
-                    como La Novia del Desierto.
-                </p>
-                <p class="margin-b-10px">
-                    Desde ese momento, surge entre ambos un amor intenso y casi irreal. 
-                    La mujer parece ser más una aparición que una persona real, una especie de 
-                    espejismo que simboliza la ilusión del amor imposible. A medida que la 
-                    historia avanza, el protagonista se sumerge en un sentimiento tan profundo 
-                    que roza la locura, confundiendo la realidad con la fantasía en medio del 
-                    silencio y la inmensidad del desierto.
-                </p>
-                <p class="margin-b-15px">
-                    La novela combina elementos de humor, tragedia y poesía, mostrando la dura 
-                    vida de los habitantes del norte chileno, pero también la riqueza emocional y
-                    espiritual que pueden tener los lugares más solitarios del mundo.
-                </p>
-                <figure class="margin-b-15px" data-aos="flip-left">
-                    <img
-                        src="data/images/FatamorganaPortada.jpg"
-                        alt="Portada de Fatamorgana de Amor con Banda de Música"
-                        width="200" height="250"
-                        loading="lazy"
-                        decoding="async"
-                        style="max-width:100%;height:auto;display:block;"
-                    >
-                </figure>
-                <button class="btns" onclick="window.open('https://matejavif.github.io/fatamorgana-plan-lector/')">
-                    Ir al Sitio
+                <button
+                onclick="window.open('https://matejavif.github.io/All-Rico-Pan-Preview/')"
+                class="btns"
+                >
+                    Vista Previa
                 </button>
             </div>
         </div>
@@ -242,12 +294,12 @@
                     </a>
                 </ul>
                 <p>
-                    (Queda aclarar que no todas las páginas de 
-                    mis compañeros van a un contexto formal)
+                    ( Queda aclarar que no todas las páginas de 
+                    mis compañeros van a un contexto laboral )
                 </p>
                 <figure class="margin-b-15px" data-aos="flip-left">
                     <img
-                        src="data/images/AlmacebREDLogo.png"
+                        src="data/images/proyects/AlmacebREDLogo.png"
                         alt="Logo de Almaceb RED"
                         width="200" height="200"
                         loading="lazy"
@@ -255,7 +307,10 @@
                         style="max-width:100%;height:auto;display:block;"
                     >
                 </figure>
-                <button onclick="window.open('https://matejavif.github.io/Almaceb-Pagina-Web/')" class="btns">
+                <button 
+                onclick="window.open('https://matejavif.github.io/Almaceb-Pagina-Web/')" 
+                class="btns"
+                >
                     Ir al Sitio
                 </button>
             </div>
@@ -267,46 +322,34 @@
         <header class="masters-titles darkmode">
             <h2>Cambios de la página</h2>
         </header>
-        <div class="master2-box1" data-aos="fade-up">
-            <div class="changes-bottom darkmode" data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="800">
-                <p>(Nota de la 1.5)</p>
-                <h3>Los cambios ahora están en otra página</h3>
-                <a href="data/html/version.html" class="links">Ver Cambios</a>
+        <div class="master2-box1">
+            <div
+            class="changes-bottom darkmode"
+            >
+                <h3>"Los cambios ahora están en otra página."</h3>
+                <p>(Nota de la Versión 1.5)</p>
+                <a href="data/html/version.html" class="links">
+                    Ver Cambios
+                </a>
             </div>
         </div>
     </footer>
-
-    <!--Barra de navegación-->
-    
-    <nav id="nav-bar" class="darkmode">
-        <div id="nav-logo">
-            <a href="data/pdf/Curriculum - JEFG.pdf">
-                <div id="nav-images" data-aos="flip-right" data-aos-easing="ease-out-cubic" data-aos-duration="1000" >
-                    <img src="data/images/icon.png" alt="icon" height="80px">
-                    <img src="data/images/icondanger.png" alt="icondanger" class="abs-images" height="80px">
-                </div>
-                <h1>Portafolio: Javier Faúndez Guzmán</h1>
-            </a>
-        </div>
-        <button id="nav-toggle" aria-label="Abrir menú" class="nav-toggle">
-            <span class="hamburger">&#9776;</span>
-        </button>
-        <div id="nav-links" class="nav-links">
-            <a href="#scroll1" id="link-sobre-mi">Sobre mí</a>
-            <a href="#scroll2" id="link-proyectos">Proyectos</a>
-            <a href="#changes" id="link-changelog">Cambios</a>
-        </div>
-    </nav>
-
-    <!--Dark Mode Toggle-->
-
-    <div id="btnToggle" class="darkmode">
-        <button>🔥</button>
-    </div>
 </main>
 
+<footer>
+    <p class="footer-text darkmode">
+        &copy; 2025 Javier Faúndez Guzmán. Todos los derechos reservados.
+    </p>
+</footer>
+
+<!--Dark Mode Toggle-->
+<div id="btnToggle" class="darkmode">
+    <button>🔥</button>
+</div>
+
 <!-- Scripts -->
-<script src="data/js/script.js"></script>
+<script src="data/js/main.js"></script>
+<script src="data/js/darkscript.js"></script>
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 <script>
   AOS.init();

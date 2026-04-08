@@ -1,0 +1,39 @@
+.darkmode {
+    transition: filter 0.3s ease;
+}
+
+    /* Cuando está activo el modo oscuro, solo los elementos con clase "darkmode" se invierten */
+.darkmode.invertido {
+    filter: invert(1) hue-rotate(180deg);
+}
+
+    /* Si quieres que imágenes dentro de .darkmode no se vean raras */
+.darkmode.invertido img {
+    filter: invert(1) hue-rotate(180deg);
+}
+
+#btnToggle {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border: none;
+    background-color: #222;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.5);
+    z-index: 9999;
+}
+
+#btnToggle button {
+    padding: 15px 15px;
+    font-size: 35px;
+    border-radius: 50%;
+    background-color: #fff;
+    cursor: pointer;
+}
